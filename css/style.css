@@ -151,6 +151,17 @@ table{
     vertical-align: middle;
 }
 
+a {
+    color: #421713;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #dc6688;
+	text-decoration: inherit;
+	text-decoration-color: transparent;
+}
+
 /* th:nth-child(1){
     width: 50px;
 }

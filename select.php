@@ -50,7 +50,7 @@ if ($status==false) {
       $view .= '</a>';
       $view .= '</th>';
 
-      $view .= '<th class="ddd">';
+      $view .= '<th class="ddd" onclick="buttonClick()">';
       $view .= '<a href="delete.php?id=' . $result['id'] . '">';
       $view .= '[削除]';
       $view .= '</a>';
@@ -70,6 +70,18 @@ if ($status==false) {
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/reset.css">
 <title>ブックマーク一覧</title>
+<script>
+
+  function buttonClick(){
+    alert('削除しました')
+    // let result = confirm('削除しますか');
+    //   if(result){
+    //     alert('削除しました');
+    //   }else{
+    //   }
+  }
+
+</script>
 </head>
 
 <body id="main">
