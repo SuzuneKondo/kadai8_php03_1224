@@ -34,23 +34,23 @@ if ($status==false) {
       //GETデータ送信リンク作成
       // <a>で囲う
       $view .= '<tr>';
-      $view .= '<th>';
+      $view .= '<th class="ddd">';
       $view .= $result['name'];
       $view .= '</th>';
-      $view .= '<th>';
+      $view .= '<th class="ddd">';
       $view .= '<a href="' . $result['url'] . '">'. $result['url'] . '</a>';
       $view .= '</th>';
-      $view .= '<th>';
+      $view .= '<th class="ddd">';
       $view .= $result['comment'];
       $view .= '</th>';
 
-      $view .= '<th>';
+      $view .= '<th class="ddd">';
       $view .= '<a href="detail.php?id=' . $result['id'] . '">';
       $view .= '[修正]';
       $view .= '</a>';
       $view .= '</th>';
 
-      $view .= '<th>';
+      $view .= '<th class="ddd">';
       $view .= '<a href="delete.php?id=' . $result['id'] . '">';
       $view .= '[削除]';
       $view .= '</a>';
@@ -78,7 +78,7 @@ if ($status==false) {
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-      <a class="navbar-brand" href="index.php">データ登録</a>
+      <a class="navbar-brand" href="index.php">データ登録画面へ</a>
       </div>
     </div>
   </nav>
@@ -87,15 +87,15 @@ if ($status==false) {
 
 <!-- Main[Start] -->
 <main>
-  <h1 class="form-title">登録一覧</h1>
+  <h1 class="form-title">読んだ絵本リスト</h1>
   <div class="result-box-flame">
     <table border="1" class="result-flame">
       <tr>
-          <th class="ttt">名前</th>
+          <th class="ttt" width="200px">名前</th>
           <th class="ttt">URL</th>
           <th class="ttt">コメント</th>
-          <th class="ttt">修正</th>
-          <th class="ttt">削除</th>
+          <th class="ttt" width="40px">修正</th>
+          <th class="ttt" width="40px">削除</th>
       </tr>
       <tr><?= $view ?></tr>
       <!-- <tr>

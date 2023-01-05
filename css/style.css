@@ -21,7 +21,7 @@ body {
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.2em;
-    margin:20px auto;
+    margin:30px auto;
 }
 
 .sub-title{
@@ -34,7 +34,7 @@ body {
 .form-wrapper{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 500px 20px;
+    justify-content: center;
 }
 
 #txt-box{
@@ -111,23 +111,44 @@ select{
 
 
 /* select.php */
+header{
+    background-color: #d24059;
+}
+
+.navbar-header{
+    padding: 30px 0;
+}
+
 table{
     width: 100%;
     table-layout: fixed;
 }
 
+.result-box-flame{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .result-flame{
     border:3px #55316e solid;
     border-collapse: collapse;
-    width: 1200px;
     margin: 50px auto;
 }
 
 .ttt{
     padding: 20px;
     border:0.8px #55316e solid;
-    background-color: #c2fc8f;
+    background-color: #fa9c56;
     font-weight: bold;
+    text-align: left;
+}
+
+.ddd{
+    padding: 5px;
+    border:0.8px #55316e solid;
+    text-align: left;
+    word-wrap: break-word;
+    vertical-align: middle;
 }
 
 /* th:nth-child(1){
@@ -138,16 +159,8 @@ th:nth-child(2){
     width: 200px;
 } */
 
-.result-box-flame{
-    max-width: 1200px;
-    margin: 0 auto;
+.syosai-title{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px auto;
 }
-
-.result-data{
-    padding: 5px;
-    border:0.8px #55316e solid;
-    text-align: left;
-    word-wrap: break-word;
-    vertical-align: middle;
-}
-

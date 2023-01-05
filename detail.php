@@ -57,14 +57,41 @@ if ($status === false) {
     <header>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <div class="navbar-header"><a class="navbar-brand" href="select.php">データ一覧</a></div>
+                <div class="navbar-header"><a class="navbar-brand" href="select.php">絵本リストへ</a></div>
             </div>
         </nav>
     </header>
 
     <!-- method, action, 各inputのnameを確認してください。  -->
     <form method="POST" action="update.php">
-        <div class="jumbotron">
+    <div class="data-table">
+        <table class="form-wrapper">
+            <h3 class="syosai-title">修正したい箇所を入力し直す</h3>
+            <tr>
+                <th>
+                    <div class="form-name">名前：</div> 
+                </th>
+                <td><input type="text" name="name" value="<?= $result['name']?>"></td>
+            </tr>
+            <tr>
+                <th>
+                    <div class="form-name">URL：</div> 
+                </th>
+                <td><input type="text" name="url" value="<?= $result['url']?>"></td>
+            </tr>
+            <tr>
+                <th>
+                    <div class="form-name">感想：</div> 
+                </th>
+                <td><textarea name="comment" rows="4" cols="40"><?= $result['comment']?></textarea></td>
+            </tr>
+            <tr><input type="hidden" name="id" value="<?= $result['id']?>"></tr>
+        </table>
+        <div class="buttons">
+            <input type="submit" value="修正" class="btn-submit">
+        </div>
+    </div>
+        <!-- <div class="jumbotron">
             <fieldset>
                 <legend>詳細</legend>
                 <label>名前：<input type="text" name="name" value="<?= $result['name']?>"></label><br>
@@ -73,7 +100,7 @@ if ($status === false) {
                 <input type="hidden" name="id" value="<?= $result['id']?>"><br>
                 <input type="submit" value="修正">
             </fieldset>
-        </div>
+        </div> -->
     </form>
 </body>
 
